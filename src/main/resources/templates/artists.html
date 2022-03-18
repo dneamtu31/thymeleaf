@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Artists</title>
+</head>
+<body>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each="artist: ${artists}">
+        <td th:text="${artist.name}"/>
+        <td th:text="${artist.age}"/>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
