@@ -9,8 +9,9 @@ import java.util.List;
 @Service
 public class ArtistService {
 
+    private List<Artist> artistList = Arrays.asList(new Artist("george", 24), new Artist("florin", 25), new Artist("mihai", 25));
 
     public List<Artist> getArtists() {
-        return Arrays.asList(new Artist("george", 24), new Artist("florin", 25), new Artist("mihai", 25));
+        return artistList;
     }
 }

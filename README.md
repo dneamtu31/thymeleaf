@@ -14,3 +14,6 @@ https://getbootstrap.com/docs/5.1/examples/
 
 JQuery
 https://www.w3schools.com/jquery
+
+Homework:
+https://spring.io/guides/gs/handling-form-submission/

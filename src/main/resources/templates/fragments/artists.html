@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+
+    <div th:fragment="artists-data" class="my-class">
+        <h1>
+            Lista artisti
+        </h1>
+        <table id="artists-table" class="table table-success table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each="artist: ${artists}">
+                <td th:text="${artist.name}"/>
+                <td th:text="${artist.age}"/>
+            </tr>
+            </tbody>
+        </table>
+
+        <button id="my-button" type="button" class="btn btn-primary">Click me</button>
+    </div>
+
+</body>
+</html>
